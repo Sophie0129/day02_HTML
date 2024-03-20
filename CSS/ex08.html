@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav{background: black;}
+        .nav > ul{list-style: none; display: flex; justify-content: flex-end;}
+        /*list-style:ul-li 점 사라지게 함
+        display: flex > 글자 가로배치
+        justify-content: flex-end > 오른쪽 배치
+        */
+        .nav ul li a {text-decoration: none; color: white;}
+        .nav ul li a:hover { color: orange;
+            border-bottom : 1px solid orange; /*그냥 보더로 네모난 박스로 만들수도 있고 보더-위치지정해서 아래만 줄 생기게도 가능*/
+            padding-bottom: 3px; transition: all 0.25s;}/*자기자신 기준으로 안족을 밀어냄*/
+            
+        .nav ul li {/*background: yellowgreen;*/
+            padding: 10px 10px;/*margin자신을 기준으로 바깥으로 밀어냄
+            첫번재 숫자는 위아래, 두번째 숫자는 좌우
+            패딩은 안쪽으로 밀지만 밀 자리가 없을경우 해당 태그의 길이가 늘어난다*/
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">BOARD</a></li>
+            <li><a href="">MEMBERSHIP</a></li>
+        </ul>
+    </nav>
+    <hr>
+    display: flex사용시 아래내용 적용 가능<br>
+    flex-start:왼쪽 끝 정렬<br> flex-end:오른족 끝 정렬<br>
+    space-around : 요소 좌우 동일 간격 정렬<br>
+</body>
+</html>

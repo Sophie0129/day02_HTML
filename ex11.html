@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{background: skyblue; display: inline-block; width:200px;
+        text-align: center;}
+        /*인라인 방식은 글자 크기만큼만 들어옴 길이를 길게 잡아도
+        인라인 블록을 쓰면 그 길이만큼 늘어남 그 안에서 정렬도 가능*/
+        span {background: olive; display: block;} /*기본 인라인*/
+        .none { display: none; background: yellow;}
+        .visible:hover ~ .none {display: inline;}
+    </style>
+</head>
+<body>
+    <div>div-01</div><!--한 단락을 차지하는거라 엔터효과 자동으로-->
+    <div>div-02</div>
+    <span>span-01</span>
+    <span>span-02</span>
+    <h1 class="visible">마우스를 올려주세요</h1>
+    <h1 class="none">내용</h1>
+    햅삐~
+</body>
+</html>

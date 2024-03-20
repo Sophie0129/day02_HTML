@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div01{
+            overflow: hidden;/*이 태그를 넘어가는 내용은 숨긴다*/
+            background-color: blue; height: 100px;}
+        .div01 div{background: red; width: 200px; height: 200px;}
+        .txt{
+            overflow: auto;
+            height: 100px; width: 100px; background: aqua;}
+            /*내용보다 칸이 작을때 내용이 넘쳐나기도 함
+            auto는 칸의 크기도 지키고 내용은 스크롤로 넘겨볼 수 있게 함*/
+
+    </style>
+</head>
+<body>
+    <div class="div01">
+        hello
+        <div>css</div>
+    </div>
+    <h1>다음 내용</h1>
+    <div class="txt">
+        제283조<br>
+        회원이 지켜야 할 내용은 지켜주세요<br>
+        내용은 없음<br>
+        반갑다<br>
+        좋은 하루 되세요
+    </div>
+</body>
+</html>

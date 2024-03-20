@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box p {color: blue;}  /*하위 선택자 본인하위 모든 부분*/
+        .box > p {color : red;} /*자식 선택자 본인 div에만, 자식의 자식에는 안들어감*/
+        .box + div {background-color: gray;} /*인접 선택자 바로 뒤 하나만*/
+        .box ~ p {background-color: green;} /*형제 선택자 같은 계층은 다*/
+    </style>
+</head>
+<body>
+    <div class = "box">
+        <p>1.하위 선택자는 특정 선택자 하위의 모든 요소를 말한다</p>
+        <div>
+            <p>2.자식 선택자는 직속 자식 요소를 말한다</p>
+        </div>
+        <p>3.다음 내용</p>
+    </div> 
+    <div>1.인접 선택자는 바로 뒤에 나오는 하나의 요소</div>
+    <div>2.인접 선택자는 바로 뒤에 나오는 하나의 요소</div>
+    <p>형제 선택자는 같은 계층에 있는 요소에 적용된다</p>
+</body>
+</html>
+  <!--하위와 자식이 똑같이 본인 div에 적용되는데 자식이 우선순위라서
+            둘이 다른 색으로 적용하면 자식의 색이 들어간다.
+            하지만 하위는 본인칸의 또 다른 자식에도 적용이 되지만 
+            자식 선택자는 자식의 자식에는 적용이 안된다.-->

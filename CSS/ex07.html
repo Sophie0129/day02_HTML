@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {width:100px; height:100px;}
+        div {background: gainsboro; text-align:center;}/*모든 글자를 가운데맞춤*/
+        .over{overflow: hidden; background:red; margin:auto; width: 100px; 
+            height: 100px;}
+        /*부모태그에서 현재 태그를 가운데 맞춤*/
+        img:hover{transform: scale(1.1); transition: all 0.1s;}
+        .h02{display: none;}
+        .h01:hover{display: none;}
+        .h01:hover+.h02{display: block;}
+    </style>
+</head>
+<body>
+    <div style="height: 200px;">
+        <h1>Hover Effect</h1>
+        <div class="h01"><img src="test.png"> </div>
+        <div class="h02">
+            <button>기사</button><button>구독</button>
+        </div>
+    <div>
+        <hr>
+        <h1>Hover Effect</h1>
+        <div class="over">
+            aaa<br>
+            bbb<br>
+            <img src="test.png"><br>
+            1234
+        </div>
+    </div>
+</body>
+</html>
